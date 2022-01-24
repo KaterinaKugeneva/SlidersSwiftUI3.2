@@ -19,8 +19,9 @@ struct ColorSliderView: View {
                 .accentColor(sliderColor)
             TextField("255", value: $value, formatter: NumberFormatter() )
                 .textFieldStyle(.roundedBorder)
-                .frame(width: 43)
+                .frame(width: 45)
                 .keyboardType(.decimalPad)
+                
             
         }
     }

@@ -12,10 +12,8 @@ struct ContentView: View {
     @State private var sliderValueRed = Double.random(in: 0...255)
     @State private var sliderValueGreen = Double.random(in: 0...255)
     @State private var sliderValueBlue = Double.random(in: 0...255)
+    @FocusState var isInputActive: Bool
     
-    @State private var userName = ""
-    @State private var displayedName = ""
-  
     
     var body: some View {
         VStack(spacing: 30) {
@@ -30,7 +28,19 @@ struct ContentView: View {
             ColorSliderView(value: $sliderValueBlue, sliderColor: .blue)
             
             
-        }.padding()
+        }.focused($isInputActive)
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Button("Done") {
+                        isInputActive = false
+                        if Int(sliderValueRed) > 255  {sliderValueRed = 255 }
+                        if Int(sliderValueGreen) > 255  {sliderValueGreen = 255 }
+                        if Int(sliderValueBlue) > 255  {sliderValueBlue = 255 }
+                        
+                    }
+                }
+            }
+            .padding()
         
     }
 }
@@ -40,3 +50,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
