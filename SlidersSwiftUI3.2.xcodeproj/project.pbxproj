@@ -11,6 +11,7 @@
 		C4476A2A279E8F4C003AA094 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4476A29279E8F4C003AA094 /* ContentView.swift */; };
 		C4476A2C279E8F4E003AA094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4476A2B279E8F4E003AA094 /* Assets.xcassets */; };
 		C4476A2F279E8F4E003AA094 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4476A2E279E8F4E003AA094 /* Preview Assets.xcassets */; };
+		C4BB0BED279EDE8F00140E9C /* ColorSliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB0BEC279EDE8F00140E9C /* ColorSliders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C4476A29279E8F4C003AA094 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4476A2B279E8F4E003AA094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4476A2E279E8F4E003AA094 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4BB0BEC279EDE8F00140E9C /* ColorSliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				C4476A27279E8F4C003AA094 /* SlidersSwiftUI3_2App.swift */,
 				C4476A29279E8F4C003AA094 /* ContentView.swift */,
+				C4BB0BEC279EDE8F00140E9C /* ColorSliders.swift */,
 				C4476A2B279E8F4E003AA094 /* Assets.xcassets */,
 				C4476A2D279E8F4E003AA094 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4BB0BED279EDE8F00140E9C /* ColorSliders.swift in Sources */,
 				C4476A2A279E8F4C003AA094 /* ContentView.swift in Sources */,
 				C4476A28279E8F4C003AA094 /* SlidersSwiftUI3_2App.swift in Sources */,
 			);
