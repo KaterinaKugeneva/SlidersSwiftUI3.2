@@ -31,6 +31,7 @@ struct ContentView: View {
         }.focused($isInputActive)
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
                     Button("Done") {
                         isInputActive = false
                         if Int(sliderValueRed) > 255  {sliderValueRed = 255 }
